@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Feedback Form</title>
+</head>
+<body>
+ <header>
+    <h1>Feedback Form</h1>
+    <p>Thank you for staying with us. Please provide your feedback.</p>
+ </header>
+  <main>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name(required)</label>
+          <input type="text" id="name" placeholder="e.g. Jane Doe">
+          <label for="email">Email</label>
+          <input form="email" id="email" name="email" placeholder="e.g. exampl@gmail.com">
+          <label for="age">Age(optional)</label>
+          <input type="number" name="age" id="age" max="100" min="3">
+        </fieldset>
+        <fieldset>
+          <legend>Was this your first time in our hotel?</legend>
+          <input id="yes-option" type="radio" value="yes" name="hotel stay">
+          <label for="yes-option">Yes</label>
+          <input id="no-option" type="radio" value="yes" name="hotel-stay">
+          <label for="no-option">No</label>
+        </fieldset>
+        <fieldset>
+          <legend>Rating</legend>
+          <label for="service">How was the service?</label>
+          <select name="service" id="service" name="service">
+            <option value="poor">Poor</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option value="satisfactory">Satisfactiory</option>
+            <option value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+        <label for="comments">Other Comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="comments"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
